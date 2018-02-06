@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45;net451;net452;net46;net461;netcoreapp1.0;netcoreapp1.1;netcoreapp2.0</TargetFrameworks>
+    <Authors>JulioGold</Authors>
+    <Company>JulioGold</Company>
+    <Description>Generate random alphanumeric strings with options.</Description>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/JulioGold/SmartRandomAlphanumericGenerator/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/JulioGold/SmartRandomAlphanumericGenerator</PackageProjectUrl>
+    <PackageTags>random alphanumeric generator size length</PackageTags>
+  </PropertyGroup>
+
+</Project>
