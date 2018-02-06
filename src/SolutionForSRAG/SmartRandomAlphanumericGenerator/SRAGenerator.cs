@@ -4,10 +4,8 @@ using System.Text;
 
 namespace SmartRandomAlphanumericGenerator
 {
-    /// <summary>
-    /// SmartRandomAlphanumericGenerator.
-    /// </summary>
-    public class SRAGenerator
+    /// <inheritdoc />
+    public class SRAGenerator : ISRAGenerator
     {
         private static Random _random = new Random();
         private const string NUMBERS = "0123456789";
@@ -15,39 +13,31 @@ namespace SmartRandomAlphanumericGenerator
         private const string LOWERCASE_LETTERS = "abcdefghijklmnopqrstuvwxyz";
         private const string SYMBOLS = "#$@&*$!^%";
 
-        /// <summary>
-        /// Define if use numbers.
-        /// </summary>
+        /// <inheritdoc />
         public bool UseNumbers { get; set; } = true;
 
-        /// <summary>
-        /// Define if use uppercase letters.
-        /// </summary>
+        /// <inheritdoc />
         public bool UseUppercaseLetters { get; set; } = true;
 
-        /// <summary>
-        /// Define if use lowercase letters.
-        /// </summary>
+        /// <inheritdoc />
         public bool UseLowercaseLetters { get; set; } = true;
 
-        /// <summary>
-        /// Define if use symbols.
-        /// </summary>
+        /// <inheritdoc />
         public bool UseSymbols { get; set; } = true;
 
+        /// <inheritdoc />
         public string Numbers => NUMBERS;
 
+        /// <inheritdoc />
         public string LowercaseLetters => LOWERCASE_LETTERS;
 
+        /// <inheritdoc />
         public string UppercaseLetters => UPPERCASE_LETTERS;
 
+        /// <inheritdoc />
         public string Symbols => SYMBOLS;
 
-        /// <summary>
-        /// Generate a alphanumeric random string with the wanted size.
-        /// </summary>
-        /// <param name="size">Size of string to generate.</param>
-        /// <returns></returns>
+        /// <inheritdoc />
         public string Generate(int size)
         {
             if (size < 1)

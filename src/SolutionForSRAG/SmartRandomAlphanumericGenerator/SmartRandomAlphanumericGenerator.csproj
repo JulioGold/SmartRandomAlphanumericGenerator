@@ -7,7 +7,7 @@
     <Description>Generate random alphanumeric strings with options.</Description>
     <PackageLicenseUrl>https://raw.githubusercontent.com/JulioGold/SmartRandomAlphanumericGenerator/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/JulioGold/SmartRandomAlphanumericGenerator</PackageProjectUrl>
-    <PackageTags>random alphanumeric generator size length</PackageTags>
+    <PackageTags>random alphanumeric generator size length character</PackageTags>
   </PropertyGroup>
 
 </Project>

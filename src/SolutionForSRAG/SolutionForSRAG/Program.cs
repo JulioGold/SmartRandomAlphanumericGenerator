@@ -7,7 +7,7 @@ namespace SolutionForSRAG
     {
         static void Main(string[] args)
         {
-            SRAGenerator rang = new SRAGenerator();
+            ISRAGenerator rang = new SRAGenerator();
             rang.UseNumbers = false;
             rang.UseLowercaseLetters = false;
             rang.UseUppercaseLetters = true;

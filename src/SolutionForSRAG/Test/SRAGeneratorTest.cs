@@ -12,7 +12,7 @@ namespace Test
         [TestMethod]
         public void Test_SRAGenerator_Generate_Length_Bigger()
         {
-            SRAGenerator sRAGenerator = new SRAGenerator();
+            ISRAGenerator sRAGenerator = new SRAGenerator();
 
             if (sRAGenerator.Generate(_size).Length > _size)
             {
@@ -23,7 +23,7 @@ namespace Test
         [TestMethod]
         public void Test_SRAGenerator_Generate_Length_Smaller()
         {
-            SRAGenerator sRAGenerator = new SRAGenerator();
+            ISRAGenerator sRAGenerator = new SRAGenerator();
 
             if (sRAGenerator.Generate(_size).Length < _size)
             {
@@ -34,7 +34,7 @@ namespace Test
         [TestMethod]
         public void Test_SRAGenerator_Generate_Repeat()
         {
-            SRAGenerator sRAGenerator = new SRAGenerator();
+            ISRAGenerator sRAGenerator = new SRAGenerator();
             string first = sRAGenerator.Generate(_size);
             string second = sRAGenerator.Generate(_size);
 
@@ -47,7 +47,7 @@ namespace Test
         [TestMethod]
         public void Test_SRAGenerator_Generate_Just_Numbers()
         {
-            SRAGenerator sRAGenerator = new SRAGenerator();
+            ISRAGenerator sRAGenerator = new SRAGenerator();
             sRAGenerator.UseLowercaseLetters = false;
             sRAGenerator.UseUppercaseLetters = false;
             sRAGenerator.UseSymbols = false;
@@ -65,7 +65,7 @@ namespace Test
         [TestMethod]
         public void Test_SRAGenerator_Generate_Just_LowercaseLetters()
         {
-            SRAGenerator sRAGenerator = new SRAGenerator();
+            ISRAGenerator sRAGenerator = new SRAGenerator();
             sRAGenerator.UseLowercaseLetters = true;
             sRAGenerator.UseUppercaseLetters = false;
             sRAGenerator.UseSymbols = false;
@@ -83,7 +83,7 @@ namespace Test
         [TestMethod]
         public void Test_SRAGenerator_Generate_Just_UppercaseLetters()
         {
-            SRAGenerator sRAGenerator = new SRAGenerator();
+            ISRAGenerator sRAGenerator = new SRAGenerator();
             sRAGenerator.UseLowercaseLetters = false;
             sRAGenerator.UseUppercaseLetters = true;
             sRAGenerator.UseSymbols = false;
@@ -101,7 +101,7 @@ namespace Test
         [TestMethod]
         public void Test_SRAGenerator_Generate_Just_Symbols()
         {
-            SRAGenerator sRAGenerator = new SRAGenerator();
+            ISRAGenerator sRAGenerator = new SRAGenerator();
             sRAGenerator.UseLowercaseLetters = false;
             sRAGenerator.UseUppercaseLetters = false;
             sRAGenerator.UseSymbols = true;
