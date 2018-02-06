@@ -8,6 +8,7 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/JulioGold/SmartRandomAlphanumericGenerator/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/JulioGold/SmartRandomAlphanumericGenerator</PackageProjectUrl>
     <PackageTags>random alphanumeric generator size length character</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
 </Project>
