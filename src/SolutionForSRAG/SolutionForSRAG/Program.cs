@@ -7,15 +7,15 @@ namespace SolutionForSRAG
     {
         static void Main(string[] args)
         {
-            ISRAGenerator rang = new SRAGenerator();
-            rang.UseNumbers = false;
-            rang.UseLowercaseLetters = false;
-            rang.UseUppercaseLetters = true;
-            rang.UseSymbols = false;
+            ISRAGenerator srag = new SRAGenerator();
+            srag.UseNumbers = false;
+            srag.UseLowercaseLetters = false;
+            srag.UseUppercaseLetters = true;
+            srag.UseSymbols = false;
 
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(rang.Generate(10));
+                Console.WriteLine(srag.Generate(10));
             }
 
             Console.ReadKey();
